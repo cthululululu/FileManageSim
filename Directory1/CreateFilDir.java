@@ -9,8 +9,11 @@ public class CreateFilDir {
 
 	}
 	  public void mkfil(){
+		  Scanner scan = new Scanner (System.in);
+		  System.out.print("Input: ");
+		  String name = scan.nextLine();
 		    try {
-		        File myObj = new File("TESTFILEE.txt");
+		        File myObj = new File(name+".txt");
 		        if (myObj.createNewFile()) {
 		          System.out.println("File created: " + myObj.getName());
 		        } 
