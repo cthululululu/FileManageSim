@@ -36,5 +36,13 @@ public class CreateFilDir {
 			        e.printStackTrace();  
 			      }  
 			  }
+	public void mkdir() {
+			  Scanner scan = new Scanner (System.in);
+			  System.out.print("Input: ");
+			  String name = scan.nextLine();
+			  File myObj = new File(name);
+			  boolean folder = myObj.mkdirs();
+			  
+		  }
 
 }
