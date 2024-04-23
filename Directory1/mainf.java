@@ -6,8 +6,8 @@ public class mainf {
 
 	public static void main(String[] args) throws FileNotFoundException {
 		// TODO import java.io.*;
-		
-		 System.out.println("Welcome to Java Console Commands!");
+		 // Display home screen
+        System.out.println("Welcome to Java Console Commands!");
         System.out.println("You can use one of the following commands:");
         System.out.println("- touch");
         System.out.println("- mkdir");
@@ -30,11 +30,14 @@ public class mainf {
           System.out.println("You have selected the 'touch' command.");
           CreateFilDir new1 = new CreateFilDir();
 		  new1.mkfil();
-		  System.out.println("A new file named TOUCHFILE has been created");
       } else if (command.equals("mkdir")) {
           System.out.println("You have selected the 'mkdir' command.");
+          CreateFilDir new2 = new CreateFilDir();
+          new2.mkdir();
       } else if (command.equals("rm")) {
           System.out.println("You have selected the 'rm' command.");
+          CreateFilDir new3 = new CreateFilDir();
+          new3.delfil();
       } else if (command.equals("cd")) {
           System.out.println("You have selected the 'cd' command.");
       } else if (command.equals("mv")) {
@@ -56,6 +59,9 @@ public class mainf {
         // Close Scanner
         scanner.close();
     }
+		
+		
+
+		
 
 }
-
