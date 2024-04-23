@@ -48,6 +48,8 @@ public class mainf {
           System.out.println("You have selected the 'ls' command.");
       } else if (command.equals("pwd")) {
           System.out.println("You have selected the 'pwd' command.");
+	      CreateFilDir new9 = new CreateFilDir();
+          new9.pwd();
       } else if (command.equals("chmod")) {
           System.out.println("You have selected the 'chmod' command.");
       } else if (command.equals("cat")) {
