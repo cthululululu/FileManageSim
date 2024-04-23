@@ -36,7 +36,21 @@ public class CreateFilDir {
 			        e.printStackTrace();  
 			      }  
 			  }
-	public void mkdir() {
+		  public void delfil() {
+			  Scanner scan = new Scanner (System.in);
+			  System.out.print("Input: ");
+			  String name = scan.nextLine();
+		
+			        File myObj = new File(name+".txt");
+			        if (myObj.exists()) {
+			        	System.out.println("File deleted: " + myObj.getName());
+			        	myObj.delete();
+			        }
+			        else {
+			        	System.out.println("File not found: " +name+".txt");
+			        }
+		  }
+		  public void mkdir() {
 			  Scanner scan = new Scanner (System.in);
 			  System.out.print("Input: ");
 			  String name = scan.nextLine();
