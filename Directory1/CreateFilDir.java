@@ -58,5 +58,7 @@ public class CreateFilDir {
 			  boolean folder = myObj.mkdirs();
 			  
 		  }
-
+	  public void pwd() {
+			  System.out.println("Working Directory = " + System.getProperty("user.dir"));
+	  }
 }
